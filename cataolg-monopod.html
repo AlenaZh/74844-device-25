@@ -2,14 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Device</title>
+  <meta charset="UTF-8">
+  <title>Моноподы для селфи</title>
 </head>
 
 <body>
   <header class="header-main">
     <nav class="navigation-main">
-      <a class="header-main-logo">
+      <a class="header-main-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип Device" width="163" height="35">
       </a>
       <div>
@@ -17,6 +17,7 @@
         Поиск по сайту
       </div>
       <ul class="user-navigation">
+        <li class="user-link">Валентин Петухов</li>
         <li class="login-link">Войти</li>
       </ul>
       <ul class="goods-navigation">
@@ -53,54 +54,90 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li class="site-navigation-item">
           <a href="#">Доставка</a>
         </li>
-        <li>
+        <li class="site-navigation-item">
           <a href="#">Гарантия</a>
         </li>
-        <li>
+        <li class="site-navigation-item">
           <a href="#">Контакты</a>
         </li>
       </ul>
     </nav>
-
   </header>
 
   <main>
-    <h1 class="visually-hidden">Главная страница "Device"</h1>
+    <h1>Моноподы для селфи</h1>
 
-    <section class="about">
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-        компаниями:</p>
-      <ul>
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!-- Здесь будет форма -->
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список моноподов для селфи</h2>
+
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Любительская селфи-палка</a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            </a>
+          </p>
+          <p class="catalog-item-price">500 руб.</p>
+        </li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Профессиональная селфи-палка</a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            </a>
+          </p>
+          <p class="catalog-item-price">1 500 руб.</p>
+        </li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            </a>
+          </p>
+          <p class="catalog-item-price">2 500 руб.</p>
+        </li>
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            </a>
+          </p>
+          <p class="catalog-item-price">4 900 руб.</p>
+        </li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
     </section>
-
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
-        бывает.</p>
-      <a href="#">
-        <img src="img/map.jpg" alt="Местоположение на карте">
-      </a>
-      <a class="button" href="#">Напишите нам</a>
-    </section>
-
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer-logo">
+    <a class="main-footer-logo" href="index.html">
       <img src="img/logo.svg" alt="Логотип Device" width="163" height="35">
     </a>
     <address>г. Москва, ул. Строителей, 15</address>
-
     <ul class="user-navigation">
       <li class="login-link">Войти</li>
     </ul>
@@ -137,12 +174,7 @@
     <h2 class="visually-hidden">Письмо нам</h2>
     <!--Здесь будет форма-->
   </section>
-
-  <section class="map">
-    <h2 class="visually-hidden">Карта</h2>
-    <!--Здесь будет форма-->
-  </section>
-
+  
 </body>
 
 </html>
