@@ -87,8 +87,49 @@
     </ul>
 
     <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтр:</h2>
       <!-- Здесь будет форма -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input id="filter-black" name="black" type="checkbox" checked>
+              <label for="filter-black">Черный</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-white" name="white" type="checkbox">
+              <label for="filter-white">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-blue" name="blue" type="checkbox" checked>
+              <label for="filter-blue">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-red" name="red" type="checkbox" checked>
+              <label for="filter-red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-pink" name="pink" type="checkbox">
+              <label for="filter-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input id="filter-bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
+              <label for="filter-bluetooth-on">Есть</label>
+            </li>
+            <li class="filter-option">
+              <input id="filter-bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
+              <label for="filter-bluetooth-off">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
