@@ -140,8 +140,22 @@
   </footer>
 
   <section class="contacts">
-    <h2 class="visually-hidden">Письмо нам</h2>
-    <!--Здесь будет форма-->
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="contacts-item">
+        <label for="contacts-name">Ваше имя:</label>
+        <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-email">Ваш e-mail:</label>
+        <input id="contacts-email" type="email" name="email" value="" placeholder="email@example.com">
+      </p>
+      <p class="contacts-item">
+        <label for="contacts-text">Текст письма:</label>
+        <textarea name="text" id="contacts-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
   </section>
 
   <section class="map">
