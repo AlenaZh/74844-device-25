@@ -88,8 +88,11 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр:</h2>
-      <!-- Здесь будет форма -->
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <!--Здесь будет элемент формы-->
+        </fieldset>
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -116,7 +119,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Цвет</legend>
+          <legend lang="en">Bluetooth</legend>
           <ul>
             <li class="filter-option">
               <input id="filter-bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
@@ -130,6 +133,29 @@
         </fieldset>
         <button class="button" type="submit">Показать</button>
       </form>
+    </section>
+
+    <section class="sort">
+      <h2>Сортировка:</h2>
+      <ul class="sort-params">
+        <li>
+          <a href="#">По цене</a>
+        </li>
+        <li>
+          <a href="#">По типу</a>
+        </li>
+        <li>
+          <a href="#">По популярности</a>
+        </li>
+      </ul>
+      <ul class="sort-direction">
+        <li>
+          <a href="#">По возрастанию</a>
+        </li>
+        <li>
+          <a href="#">По убыванию</a>
+        </li>
+      </ul>
     </section>
 
     <section class="catalog">
