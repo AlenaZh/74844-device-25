@@ -1,0 +1,18 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Gilroy";
+
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+  url("Gilroylight.woff2") format("woff2"),
+  url("Gilroylight.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Gilroy";
+
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+  url("Gilroyextrabold.woff2") format("woff2"),
+  url("Gilroyextrabold.woff") format("woff");
+}
