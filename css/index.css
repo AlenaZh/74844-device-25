@@ -96,6 +96,7 @@ a {
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .site-navigation-catalog {
@@ -104,6 +105,7 @@ a {
   line-height: 36px;
   font-family: "Open Sans", Arial, sans-serif;
   text-transform: initial;
+  letter-spacing: normal;
 }
 
 .site-navigation,
@@ -266,4 +268,183 @@ a {
 
 .map {
   display: none;
+}
+
+/*catalog.html*/
+
+.page-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy";
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: rgb(239, 239, 239);
+}
+
+.filters h2 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: rgb(220, 220, 220);
+} 
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy";
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.sort {
+  background-color: rgb(239, 239, 239);
+}
+
+.sort h2 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.sort-params,
+.sort-direction {
+  list-style: none;
+}
+
+.sort-params a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-params a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-params a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  color: rgb(0, 0, 0);
+}
+
+.catalog-list h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy";
+}
+
+.catalog-item-price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy";
+}
+
+.catalog-item-hover a:not([class="button"]) {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-item-hover a:not([class="button"]):hover {
+  color: rgb(0, 0, 0);
+}
+
+.catalog-item-hover a:not([class="button"]):active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-image-wrap span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+
+  border: 2px solid  rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.catalog-pagination {
+  list-style: none;
+
+  background-color: rgb(234, 234, 234);
+}
+
+.catalog-pagination-number ul {
+  list-style: none;
+}
+
+.catalog-pagination a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.catalog-pagination-number a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.catalog-pagination-number li:active a {
+  color: rgba(0, 0, 0);
+}
+
+.catalog-pagination-back:hover,
+.catalog-pagination-next:hover {
+  background-color: rgb(217,217,217);
+}
+
+.catalog-pagination-back:active a,
+.catalog-pagination-next:active a {
+  color: rgba(0, 0, 0, 0.3);
 }
