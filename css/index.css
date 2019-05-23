@@ -250,6 +250,14 @@ a {
   font-style: normal;
 }
 
+.main-footer a[href^="tel:"]:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer a[href^="tel:"]:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .contacts label {
   font-weight: 800;
   font-size: 18px;
@@ -467,7 +475,7 @@ a {
   color: rgba(0, 0, 0);
 }
 
-.pagination-number--active a {
+.pagination-number--current a {
   color: rgba(0, 0, 0);
 }
 
