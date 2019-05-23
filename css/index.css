@@ -51,6 +51,14 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header-main-logo:hover {
+  opacity: 0.6;
+}
+
+.header-main-logo:active {
+  opacity: 0.3;
+}
+
 .services-button:active {
   color: rgb(247, 225, 132);
 
@@ -229,6 +237,14 @@ a {
   background-color: rgb(70, 70, 70);
 }
 
+.main-footer-logo:hover {
+  opacity: 0.6;
+}
+
+.main-footer-logo:active {
+  opacity: 0.3;
+}
+
 .main-footer a {
   color: rgb(255, 255, 255);
 }
@@ -256,6 +272,14 @@ a {
 
 .main-footer a[href^="tel:"]:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.htmlacademy-logo:hover {
+  opacity: 0.6;
+}
+
+.htmlacademy-logo:active {
+  opacity: 0.3;
 }
 
 .contacts label {
