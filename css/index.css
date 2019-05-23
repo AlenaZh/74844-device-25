@@ -142,6 +142,10 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
 }
 
+.carousel-list {
+  color: rgb(70, 70, 70);
+}
+
 .carousel-parameters td {
   font-weight: 300;
   font-size: 36px;
@@ -153,6 +157,7 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
+  color: rgb(70, 70, 70);
 }
 
 .carousel-controls {
@@ -185,6 +190,10 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
 }
 
+.services-list p {
+  color: rgb(70, 70, 70);
+}
+
 .brands ul {
   list-style: none;
 }
@@ -194,6 +203,10 @@ a {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", Arial, sans-serif;
+}
+
+.about p {
+  color: rgb(70, 70, 70);
 }
 
 .about ul {
@@ -216,16 +229,25 @@ a {
   background-color: rgb(70, 70, 70);
 }
 
+.main-footer a {
+  color: rgb(255, 255, 255);
+}
+
+.user-navigation-footer a,
+.goods-navigation-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-navigation-footer .logout {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .social-list {
   list-style: none;
 }
 
 .main-footer address {
   font-style: normal;
-}
-
-.main-footer a {
-  color: rgb(255, 255, 255);
 }
 
 .contacts label {
@@ -311,7 +333,7 @@ a {
   letter-spacing: 0.2em;
 
   background-color: rgb(220, 220, 220);
-} 
+}
 
 .filter fieldset {
   border: none;
@@ -384,6 +406,7 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
+  color: rgb(70, 70, 70);
 }
 
 .catalog-item-hover a:not([class="button"]) {
@@ -408,7 +431,7 @@ a {
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 
-  border: 2px solid  rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
 
@@ -435,13 +458,14 @@ a {
 .catalog-pagination-number a {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .catalog-pagination-number li:active a {
   color: rgba(0, 0, 0);
 }
 
 .catalog-pagination-back:hover,
 .catalog-pagination-next:hover {
-  background-color: rgb(217,217,217);
+  background-color: rgb(217, 217, 217);
 }
 
 .catalog-pagination-back:active a,
