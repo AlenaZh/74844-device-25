@@ -18,6 +18,26 @@
   url("../fonts/Gilroyextrabold.woff") format("woff");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Open Sans";
+
+  src: local("Open Sans light"), local("opensans-light"),
+  url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans";
+
+  src: local("Open Sans"), local("opensans-regular"), local("Open Sans regular")
+  url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+}
+
 body {
   margin: 0;
 
