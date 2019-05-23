@@ -139,14 +139,14 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .carousel-parameters td {
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .carousel-parameters th {
@@ -167,7 +167,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
 
   background-color: rgb(255, 255, 255);
@@ -182,7 +182,7 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .brands ul {
@@ -193,21 +193,21 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .about ul {
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .contacts h2 {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .main-footer {
@@ -232,7 +232,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .contacts input,
@@ -276,7 +276,7 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .breadcrumbs {
@@ -306,7 +306,7 @@ a {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
@@ -321,7 +321,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .filter ul {
@@ -338,7 +338,7 @@ a {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -376,14 +376,14 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .catalog-item-price {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 .catalog-item-hover a:not([class="button"]) {
@@ -404,7 +404,7 @@ a {
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 
@@ -426,7 +426,7 @@ a {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 0.2em;
