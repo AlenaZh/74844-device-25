@@ -459,7 +459,15 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-pagination-number li:active a {
+.catalog-pagination-number-item:hover a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-pagination-number-item:active a {
+  color: rgba(0, 0, 0);
+}
+
+.pagination-number--active a {
   color: rgba(0, 0, 0);
 }
 
