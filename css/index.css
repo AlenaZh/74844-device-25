@@ -49,22 +49,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-body > * {
-  background-color: rgba(0, 255, 0, 0.3);
-}
-
-body > * > * {
-  background-color: rgba(0, 60, 255, 0.3);
-}
-
-body > * > * > * {
-  background-color: rgba(253, 25, 0, 0.3);
-}
-
-body > * > * > * > * {
-  background-color: rgba(255, 0, 234, 0.3);
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
