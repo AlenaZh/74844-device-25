@@ -128,14 +128,21 @@ input[type="radio"].visually-hidden {
 .button::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 0;
   left: 0;
   z-index: -1;
 
   width: 100%;
-  height: 8px;
+  height: 40px;
 
   background-color: rgb(240, 197, 46);
+  transform: rotateX(75deg);
+}
+
+.button:hover::before {
+  transform: rotateX(-75deg);
+
+  transition: all 0.4s ease;
 }
 
 .button:active {
