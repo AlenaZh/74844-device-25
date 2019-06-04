@@ -1324,9 +1324,32 @@ input[type="radio"].visually-hidden {
 }
 
 .filter ul {
+  padding-left: 0;
+
   list-style: none;
   font-size: 14px;
   line-height: 40px;
+}
+
+.filter-item {
+  position: relative;
+
+  padding-left: 40px;
+}
+
+.filter-item input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 28px;
+  height: 23px;
+
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.filter-item input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .sort-wrapper {
