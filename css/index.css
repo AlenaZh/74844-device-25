@@ -932,15 +932,33 @@ input[type="radio"].visually-hidden {
   color: rgb(70, 70, 70);
 }
 
-.about ul {
+.about-list {
   margin-top: 67px;
   margin-bottom: 56px;
   padding-left: 36px;
 
+  list-style: none;
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy", Arial, sans-serif;
+}
+
+.about-list li {
+  position: relative;
+}
+
+.about-list li::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -30px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 3px solid rgb(230, 230, 230);
+  border-radius: 50%;
 }
 
 .contacts {
