@@ -1069,8 +1069,6 @@ input[type="radio"].visually-hidden {
   width: 32px;
   height: 32px;
 
-  font-size: 0;
-
   background: url("../img/icon-facebook.svg") no-repeat;
 }
 
@@ -1375,8 +1373,6 @@ input[type="radio"].visually-hidden {
 
 .sort-direction {
   margin-left: auto;
-
-  font-size: 0;
 }
 
 .catalog {
