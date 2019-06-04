@@ -119,13 +119,13 @@
                 </li>
                 <li class="filter-item">
                   <label>
-                    <input name="blue" type="checkbox" class="visually-hidden">
+                    <input name="blue" type="checkbox" class="visually-hidden" checked>
                     <span class="checkbox-indicator"></span>
                     Синий</label>
                 </li>
                 <li class="filter-item">
                   <label>
-                    <input name="red" type="checkbox" class="visually-hidden">
+                    <input name="red" type="checkbox" class="visually-hidden" checked>
                     <span class="checkbox-indicator"></span>
                     Красный</label>
                 </li>
@@ -141,12 +141,16 @@
               <legend lang="en">Bluetooth</legend>
               <ul>
                 <li class="filter-item">
-                  <input id="filter-bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
-                  <label for="filter-bluetooth-on">Есть</label>
+                  <label>
+                    <input class="visually-hidden" id="filter-bluetooth-on" type="radio" name="bluetooth" value="bluetooth-on" checked>
+                    <span class="radio-indicator"></span>
+                    Есть</label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off">
-                  <label for="filter-bluetooth-off">Нет</label>
+                  <label>
+                    <input class="visually-hidden" id="filter-bluetooth-off" type="radio" name="bluetooth" value="bluetooth-off" >
+                    <span class="radio-indicator"></span>
+                    Нет</label>
                 </li>
               </ul>
             </fieldset>

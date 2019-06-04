@@ -1352,6 +1352,21 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
+.filter-item input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/radio-off.svg") no-repeat;
+}
+
+.filter-item input[type="radio"]:checked + .radio-indicator {
+  background: url("../img/radio-on.svg") no-repeat;
+}
+
 .sort-wrapper {
   width: 760px;
   padding-left: 72px;
