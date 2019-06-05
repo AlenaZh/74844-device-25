@@ -4,8 +4,8 @@
   font-family: "Gilroy";
 
   src: local("Gilroy Light"), local("Gilroy-Light"),
-  url("../fonts/gilroylight.woff2") format("woff2"),
-  url("../fonts/gilroylight.woff") format("woff");
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-family: "Gilroy";
 
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
-  url("../fonts/gilroyextrabold.woff2") format("woff2"),
-  url("../fonts/gilroyextrabold.woff") format("woff");
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-family: "Open Sans";
 
   src: local("Open Sans light"), local("opensans-light"),
-  url("../fonts/opensanslight.woff2") format("woff2"),
-  url("../fonts/opensanslight.woff") format("woff");
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-family: "Open Sans";
 
   src: local("Open Sans"), local("opensans-regular"), local("Open Sans regular"),
-  url("../fonts/opensans.woff2") format("woff2"),
-  url("../fonts/opensans.woff") format("woff");
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 body {
@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.search-form input:focus ~ .search-form-button {
+.search-form input:focus~.search-form-button {
   display: block;
 }
 
@@ -278,7 +278,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation__item:first-child > a::after {
+.site-navigation__item:first-child>a::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -300,7 +300,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.site-navigation__item a:hover ~ .site-navigation-catalog {
+.site-navigation__item a:hover~.site-navigation-catalog {
   display: flex;
 }
 
@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.compare:hover ~ .compare-icon {
+.compare:hover~.compare-icon {
   opacity: 0.6;
 }
 
@@ -1338,31 +1338,29 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
 }
 
-.filter-item:focus > label,
-.filter-item label:hover {
-  outline: inherit;
-  outline-color: blueviolet;
-}
-
-.filter-item:hover .checkbox-indicator {
+.filter-item:hover .checkbox-indicator,
+.filter-item:hover .radio-indicator {
   opacity: 0.6;
 }
 
-.filter-item:active .checkbox-indicator {
+.filter-item:active .checkbox-indicator,
+.filter-item:active .radio-indicator {
   opacity: 1;
 }
 
-.filter-item input:disabled + .checkbox-indicator,
-.filter-item input:disabled + .checkbox-indicator + .filter-item-text {
+.filter-item input:disabled+.checkbox-indicator,
+.filter-item input:disabled+.radio-indicator,
+.filter-item input:disabled+.checkbox-indicator+.filter-item-text,
+.filter-item input:disabled+.radio-indicator+.filter-item-text {
   opacity: 0.25;
 }
 
-.filter-item input[type="checkbox"]:focus + .checkbox-indicator,
-.filter-item input[type="radio"]:focus + .radio-indicator {
+.filter-item input[type="checkbox"]:focus+.checkbox-indicator,
+.filter-item input[type="radio"]:focus+.radio-indicator {
   outline: 10px auto -webkit-focus-ring-color;
 }
 
-.filter-item input[type="checkbox"] + .checkbox-indicator {
+.filter-item input[type="checkbox"]+.checkbox-indicator {
   position: absolute;
   top: 9px;
   left: 0;
@@ -1373,11 +1371,11 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.filter-item input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-item input[type="checkbox"]:checked+.checkbox-indicator {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-.filter-item input[type="radio"] + .radio-indicator {
+.filter-item input[type="radio"]+.radio-indicator {
   position: absolute;
   top: 9px;
   left: 0;
@@ -1388,7 +1386,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/radio-off.svg") no-repeat;
 }
 
-.filter-item input[type="radio"]:checked + .radio-indicator {
+.filter-item input[type="radio"]:checked+.radio-indicator {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
