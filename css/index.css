@@ -33,7 +33,8 @@
   font-weight: 400;
   font-family: "Open Sans";
 
-  src: local("Open Sans"), local("opensans-regular"), local("Open Sans regular") url("../fonts/opensans.woff2") format("woff2"),
+  src: local("Open Sans"), local("opensans-regular"), local("Open Sans regular"),
+  url("../fonts/opensans.woff2") format("woff2"),
   url("../fonts/opensans.woff") format("woff");
 }
 
@@ -1345,6 +1346,10 @@ input[type="radio"].visually-hidden {
 
 .filter-item:hover .checkbox-indicator {
   opacity: 0.6;
+}
+
+.filter-item:active .checkbox-indicator {
+  opacity: 1;
 }
 
 .filter-item input:disabled + .checkbox-indicator,
