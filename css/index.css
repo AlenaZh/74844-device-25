@@ -132,26 +132,22 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main {
-  margin-top: 40px;
   padding: 0 60px;
 
-  background-color: rgb(247, 226, 150);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 40px, rgb(247, 226, 150) 40px);
 }
 
 .navigation-main {
-  padding-top: 32px;
-  padding-bottom: 163px;
+  padding-top: 22px;
+  padding-bottom: 50px;
 }
 
 .header-main-logo {
   position: relative;
 
   display: block;
-}
 
-.header-main-logo img {
-  position: absolute;
-  top: -49px;
+  line-height: 45px;
 }
 
 .header-main-logo:hover {
@@ -405,12 +401,13 @@ input[type="radio"].visually-hidden {
 .carousel-products {
   position: relative;
 
-  margin-bottom: -14px;
+  margin-bottom: 100px;
+
+  background: linear-gradient(to bottom , rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
 }
 
 .carousel-list {
   position: relative;
-  top: -110px;
 
   margin: 0;
   padding: 0;
@@ -554,7 +551,7 @@ input[type="radio"].visually-hidden {
 .carousel-controls {
   position: absolute;
   right: 80px;
-  bottom: 255px;
+  bottom: 155px;
   z-index: 1;
 
   display: inline-block;
