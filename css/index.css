@@ -4,8 +4,8 @@
   font-family: "Gilroy";
 
   src: local("Gilroy Light"), local("Gilroy-Light"),
-    url("../fonts/gilroylight.woff2") format("woff2"),
-    url("../fonts/gilroylight.woff") format("woff");
+  url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-family: "Gilroy";
 
   src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
-    url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold.woff") format("woff");
+  url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-family: "Open Sans";
 
   src: local("Open Sans light"), local("opensans-light"),
-    url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
+  url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-family: "Open Sans";
 
   src: local("Open Sans"), local("opensans-regular"), local("Open Sans regular"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+  url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
 }
 
 body {
@@ -105,6 +105,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .button::before {
   content: "";
   position: absolute;
@@ -125,7 +129,6 @@ input[type="radio"].visually-hidden {
 
   height: 40px;
 }
-
 
 .header-main {
   margin-top: 40px;
@@ -218,7 +221,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.search-form input:focus~.search-form-button {
+.search-form input:focus ~ .search-form-button {
   display: block;
 }
 
@@ -278,7 +281,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation__item:first-child>a::after {
+.site-navigation__item:first-child > a::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -300,7 +303,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.site-navigation__item a:hover~.site-navigation-catalog {
+.site-navigation__item a:hover ~ .site-navigation-catalog {
   display: flex;
 }
 
@@ -379,7 +382,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.compare:hover~.compare-icon {
+.compare:hover ~ .compare-icon {
   opacity: 0.6;
 }
 
@@ -745,6 +748,10 @@ input[type="radio"].visually-hidden {
 .services-button {
   width: 160px;
   padding: 0;
+}
+
+.services-button:active {
+  color: rgb(0, 0, 0);
 }
 
 .services-control--current .button {
@@ -1283,8 +1290,8 @@ input[type="radio"].visually-hidden {
 .filters {
   width: 200px;
   margin-left: auto;
-  padding-right: 67px;
-  padding-left: 64px;
+  padding-right: 68px;
+  padding-left: 60px;
 }
 
 .filters::before {
@@ -1301,7 +1308,7 @@ input[type="radio"].visually-hidden {
 .filters h2 {
   position: relative;
 
-  margin-top: 0;
+  margin: 0;
 
   font-weight: 800;
   font-size: 16px;
@@ -1313,7 +1320,16 @@ input[type="radio"].visually-hidden {
   background-color: rgb(220, 220, 220);
 }
 
+.filter {
+  padding-top: 70px;
+}
+
 .filter fieldset {
+  position: relative;
+
+  margin: 14px 0 40px 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -1322,6 +1338,17 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
+}
+
+.filter legend::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: rgb(0, 0, 0);
 }
 
 .filter ul {
@@ -1348,19 +1375,19 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.filter-item input:disabled+.checkbox-indicator,
-.filter-item input:disabled+.radio-indicator,
-.filter-item input:disabled+.checkbox-indicator+.filter-item-text,
-.filter-item input:disabled+.radio-indicator+.filter-item-text {
+.filter-item input:disabled + .checkbox-indicator,
+.filter-item input:disabled + .radio-indicator,
+.filter-item input:disabled + .checkbox-indicator + .filter-item-text,
+.filter-item input:disabled + .radio-indicator + .filter-item-text {
   opacity: 0.25;
 }
 
-.filter-item input[type="checkbox"]:focus+.checkbox-indicator,
-.filter-item input[type="radio"]:focus+.radio-indicator {
+.filter-item input[type="checkbox"]:focus + .checkbox-indicator,
+.filter-item input[type="radio"]:focus + .radio-indicator {
   outline: 10px auto -webkit-focus-ring-color;
 }
 
-.filter-item input[type="checkbox"]+.checkbox-indicator {
+.filter-item input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 9px;
   left: 0;
@@ -1371,11 +1398,11 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.filter-item input[type="checkbox"]:checked+.checkbox-indicator {
+.filter-item input[type="checkbox"]:checked + .checkbox-indicator {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-.filter-item input[type="radio"]+.radio-indicator {
+.filter-item input[type="radio"] + .radio-indicator {
   position: absolute;
   top: 9px;
   left: 0;
@@ -1386,7 +1413,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/radio-off.svg") no-repeat;
 }
 
-.filter-item input[type="radio"]:checked+.radio-indicator {
+.filter-item input[type="radio"]:checked + .radio-indicator {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
@@ -1468,6 +1495,28 @@ input[type="radio"].visually-hidden {
 .sort-direction {
   margin-left: auto;
 }
+
+.sort-direction li {
+  display: inline-block;
+}
+
+.sort-direction-arrow {
+  position: relative;
+
+  display: inline-block;;
+}
+
+.sort-direction-arrow::before {
+  content: "";
+  position: absolute;
+
+  border: 20px solid rgb(0, 0, 0);
+  border-right: 10px;
+  border-right-color: transparent;
+  border-left: 10px;
+  border-left-color: transparent;
+}
+
 
 .catalog {
   padding-bottom: 78px;
@@ -1606,6 +1655,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  margin-top: -14px;
   padding: 0;
 
   list-style: none;
