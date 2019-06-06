@@ -871,23 +871,24 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-.brands-list__item:nth-child(1) a::before {
+.brands-list__item-band-1 a::before {
   background-image: url("../img/brand-1-color.jpg");
 }
 
-.brands-list__item:nth-child(2) a::before {
+.brands-list__item-band-2 a::before {
   background-image: url("../img/brand-2-color.jpg");
 }
 
-.brands-list__item:nth-child(3) a::before {
+.brands-list__item-band-3 a::before {
   background-image: url("../img/brand-3-color.jpg");
 }
 
-.brands-list__item:nth-child(4) a::before {
+.brands-list__item-band-4 a::before {
   background-image: url("../img/brand-4-color.jpg");
 }
 
-.brands-list__item a:hover::before {
+.brands-list__item a:hover::before,
+.brands-list__item a:focus::before {
   opacity: 1;
 }
 
@@ -1612,8 +1613,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.sort-direction-arrow:hover::before{
-  opacity: 1;
+.sort-direction-arrow:hover::before {
+  opacity: 0.4;
 }
 
 .sort-direction-arrow::before {
