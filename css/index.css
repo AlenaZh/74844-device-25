@@ -670,6 +670,7 @@ input[type="radio"].visually-hidden {
   background-color: rgb(255, 255, 255);
 }
 
+.categories-list__link:focus::before,
 .categories-list__link:hover::before {
   background-color: rgb(240, 197, 46);
 }
