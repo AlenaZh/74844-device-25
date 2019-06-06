@@ -142,10 +142,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 163px;
 }
 
-.user-navigation .logout {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .header-main-logo {
   position: relative;
 
@@ -251,10 +247,6 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.basket {
-  margin-left: 61px;
-}
-
 .site-navigation {
   display: flex;
   flex-direction: row;
@@ -279,13 +271,15 @@ input[type="radio"].visually-hidden {
 
 .site-navigation__item:first-child a {
   position: relative;
+
+  padding-right: 28px;
 }
 
 .site-navigation__item:first-child > a::after {
   content: "";
   position: absolute;
   top: 3px;
-  right: -28px;
+  right: 0;
 
   width: 16px;
   height: 16px;
@@ -343,24 +337,39 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   position: relative;
+}
 
-  margin-left: 27px;
+.user-navigation .login {
+  padding-left: 27px;
+}
+
+.user-navigation .logout {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation svg {
   position: absolute;
   top: 10px;
-  left: -27px;
+  left: 0;
 }
 
 .goods-navigation {
   position: relative;
 }
 
+.goods-navigation .compare {
+  padding-left: 21px;
+}
+
 .compare svg {
   position: absolute;
   top: 12px;
-  left: -21px;
+  left: 0;
+}
+
+.goods-navigation .basket {
+  margin-left: 39px;
+  padding-left: 22px;
 }
 
 .basket svg {
@@ -613,28 +622,28 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.categories-list__item:nth-child(1) a::after {
+.categories-list__item-popular-1 a::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.categories-list__item:nth-child(2) a::after {
+.categories-list__item-popular-2 a::after {
   background-image: url("../img/popular-2.svg");
   background-position: bottom;
 }
 
-.categories-list__item:nth-child(3) a::after {
+.categories-list__item-popular-3 a::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.categories-list__item:nth-child(4) a::after {
+.categories-list__item-popular-4 a::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.categories-list__item:nth-child(5) a::after {
+.categories-list__item-popular-5 a::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.categories-list__item:nth-child(6) a::after {
+.categories-list__item-popular-6 a::after {
   background-image: url("../img/popular-6.svg");
 }
 
@@ -1111,6 +1120,7 @@ input[type="radio"].visually-hidden {
   height: 32px;
 
   background: url("../img/icon-facebook.svg") no-repeat;
+  opacity: 0.6;
 }
 
 .social-button:hover {
@@ -1164,7 +1174,9 @@ input[type="radio"].visually-hidden {
   left: 50%;
   z-index: 5;
 
-  display: block;
+/*display: block;*/
+
+  display: none;
   width: 760px;
   padding: 95px 100px 70px 100px;
 
@@ -1270,6 +1282,7 @@ input[type="radio"].visually-hidden {
 
 .profile {
   margin-right: 20px;
+  padding-left: 21px;
 }
 
 .page-title {
