@@ -1697,8 +1697,9 @@ input[type="radio"].visually-hidden {
 
 .catalog-image-wrap {
   position: relative;
-  min-height: 380px;
+
   order: -1;
+  min-height: 380px;
   margin: 0;
 }
 
@@ -1744,9 +1745,13 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+  line-height: 70px;
 }
 
 .catalog-pagination a {
+  display: inline-block;
+  width: 40px;
+
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
@@ -1758,10 +1763,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-pagination-number a {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.catalog-pagination-number-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .catalog-pagination-number-item:hover a {
