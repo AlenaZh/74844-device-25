@@ -1437,29 +1437,30 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
 }
 
-.filter-item:hover .checkbox-indicator,
-.filter-item:hover .radio-indicator {
+.filter-item:hover .filter-item-text::before,
+.filter-item:hover .filter-item-text::before {
   opacity: 0.6;
 }
 
-.filter-item:active .checkbox-indicator,
-.filter-item:active .radio-indicator {
+.filter-item:active .filter-item-text::before,
+.filter-item:active .filter-item-text::before {
   opacity: 1;
 }
 
-.filter-item input:disabled + .checkbox-indicator,
-.filter-item input:disabled + .radio-indicator,
-.filter-item input:disabled + .checkbox-indicator + .filter-item-text,
-.filter-item input:disabled + .radio-indicator + .filter-item-text {
+.filter-item input:disabled + .filter-item-text::before,
+.filter-item input:disabled + .filter-item-text::before,
+.filter-item input:disabled + .filter-item-text,
+.filter-item input:disabled + .filter-item-text {
   opacity: 0.25;
 }
 
-.filter-item input[type="checkbox"]:focus + .checkbox-indicator,
-.filter-item input[type="radio"]:focus + .radio-indicator {
+.filter-item input[type="checkbox"]:focus + .filter-item-text::before,
+.filter-item input[type="radio"]:focus + .filter-item-text::before {
   outline: 10px auto -webkit-focus-ring-color;
 }
 
-.filter-item input[type="checkbox"] + .checkbox-indicator {
+.filter-item input[type="checkbox"] + .filter-item-text::before {
+  content: "";
   position: absolute;
   top: 9px;
   left: 0;
@@ -1470,11 +1471,12 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.filter-item input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-item input[type="checkbox"]:checked + .filter-item-text::before {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-.filter-item input[type="radio"] + .radio-indicator {
+.filter-item input[type="radio"] + .filter-item-text::before {
+  content: "";
   position: absolute;
   top: 9px;
   left: 0;
@@ -1485,7 +1487,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/radio-off.svg") no-repeat;
 }
 
-.filter-item input[type="radio"]:checked + .radio-indicator {
+.filter-item input[type="radio"]:checked + .filter-item-text::before {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
