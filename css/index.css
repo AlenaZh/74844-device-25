@@ -1170,7 +1170,6 @@ input[type="radio"].visually-hidden {
   top: 50%;
   left: 50%;
   z-index: 5;
-
 /*display: block;*/
 
   display: none;
@@ -1180,6 +1179,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   transform: translate(-50%, -50%);
 }
 
@@ -1254,8 +1254,21 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  width: 960px;
+  height: 559px;
+
+  background-color: rgb(220, 222, 224);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  transform: translate(-50%, -50%);
 }
+
+
+
 
 .modal-button {
   content: "";
