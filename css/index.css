@@ -334,6 +334,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+  text-transform: none;
 }
 
 .site-navigation-catalog-group:not(:last-child) {
@@ -363,6 +364,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .compare {
+  margin-right: 14px;
   padding-left: 21px;
 }
 
@@ -373,7 +375,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .basket {
-  margin-left: 39px;
+  margin-left: 10px;
   padding-left: 22px;
 }
 
