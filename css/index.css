@@ -1620,6 +1620,18 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.sort-direction-arrow:focus::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -13px;
+
+  width: 15px;
+  height: 15px;
+
+  outline: 10px auto -webkit-focus-ring-color;
+}
+
 .sort-direction-arrow::before {
   content: "";
   position: absolute;
