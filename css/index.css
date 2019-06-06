@@ -124,7 +124,8 @@ input[type="radio"].visually-hidden {
   transition: all 0.4s ease;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   top: 0;
 
   height: 40px;
@@ -1637,7 +1638,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 46px;
 }
 
-.catalog-item:hover .catalog-item-hover {
+.catalog-item:hover .catalog-item-inner {
   display: flex;
 }
 
@@ -1661,7 +1662,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.catalog-item-hover {
+.catalog-item-inner {
   position: absolute;
   top: 0;
 
@@ -1670,33 +1671,33 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 360px;
-  height: 380px;
+  height: 100%;
 
   background-color: rgba(239, 239, 239, 0.7);
 }
 
-.catalog-item-hover .button {
+.catalog-item-inner .button {
   margin-top: 48px;
   margin-bottom: 12px;
 }
 
-.catalog-item-hover a:not([class="button"]) {
+.catalog-item-inner a:not([class="button"]) {
   font-size: 13px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.catalog-item-hover a:not([class="button"]):hover {
+.catalog-item-inner a:not([class="button"]):hover {
   color: rgb(0, 0, 0);
 }
 
-.catalog-item-hover a:not([class="button"]):active {
+.catalog-item-inner a:not([class="button"]):active {
   color: rgba(0, 0, 0, 0.2);
 }
 
 .catalog-image-wrap {
   position: relative;
-
+  min-height: 380px;
   order: -1;
   margin: 0;
 }
