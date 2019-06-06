@@ -1166,7 +1166,6 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-modal {
-  position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1270,6 +1269,15 @@ input[type="radio"].visually-hidden {
 
   background: url("../img/modal-close.svg") no-repeat;
   border: none;
+  opacity: 0.5;
+}
+
+.modal-button:hover {
+  opacity: 1;
+}
+
+.modal-button:active {
+  opacity: 0.3;
 }
 
 /*catalog.html*/
@@ -1280,7 +1288,7 @@ input[type="radio"].visually-hidden {
 
 .profile {
   margin-right: 20px;
-  padding-left: 21px;
+  padding-left: 27px;
 }
 
 .page-title {
@@ -1568,27 +1576,37 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.sort-direction li {
-  display: inline-block;
+.sort-direction a {
+  margin-left: 30px;
 }
 
 .sort-direction-arrow {
   position: relative;
-
-  display: inline-block;;
 }
 
 .sort-direction-arrow::before {
   content: "";
   position: absolute;
+  top: 7px;
+  left: -11px;
 
-  border: 20px solid rgb(0, 0, 0);
-  border-right: 10px;
-  border-right-color: transparent;
-  border-left: 10px;
-  border-left-color: transparent;
+  width: 10px;
+  height: 11px;
+
+  opacity: 0.2;
 }
 
+.sort-direction--current::before {
+  opacity: 1;
+}
+
+.sort-direction-arrow-inc::before {
+  background: url("../img/icon-up-dir.svg") no-repeat;
+}
+
+.sort-direction-arrow-dec::before {
+  background: url("../img/icon-down-dir.svg") no-repeat;
+}
 
 .catalog {
   padding-bottom: 78px;
@@ -1747,7 +1765,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-pagination a {
   display: inline-block;
-  width: 40px;
 
   font-weight: 800;
   font-size: 16px;
@@ -1759,6 +1776,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-pagination-number a {
+  width: 40px;
+
   color: rgba(0, 0, 0, 0.3);
 }
 
