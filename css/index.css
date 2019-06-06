@@ -1158,10 +1158,45 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-modal {
-  display: none;
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  display: block;
+  width: 760px;
+  padding: 95px 100px 70px 100px;
+
+  font-size: 0;
+
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+.contacts-item {
+  display: inline-block;
+}
+
+.contacts-item:nth-child(1) {
+  width: 360px;
+  margin-right: 40px;
+}
+
+.contacts-item:nth-child(2) {
+  width: 360px;
+}
+
+.contacts-item:nth-child(3) {
+  width: 100%;
+  margin-top: 34px;
+  margin-bottom: 40px;
 }
 
 .contacts-modal label {
+  display: block;
+  margin-bottom: 10px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1170,6 +1205,11 @@ input[type="radio"].visually-hidden {
 
 .contacts-modal input,
 .contacts-modal textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1179,6 +1219,11 @@ input[type="radio"].visually-hidden {
   background-color: rgb(242, 242, 242);
   border: 3px solid transparent;
   outline: none;
+}
+
+.contacts-modal textarea {
+  min-width: 760px;
+  max-width: 760px;
 }
 
 .contacts-modal input:hover,
@@ -1201,6 +1246,20 @@ input[type="radio"].visually-hidden {
 
 .map {
   display: none;
+}
+
+.modal-button {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+  padding: 0;
+
+  background: url("../img/modal-close.svg") no-repeat;
+  border: none;
 }
 
 /*catalog.html*/
