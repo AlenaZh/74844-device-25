@@ -630,28 +630,28 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.categories-list__item-popular-1 a::after {
+.categories-list__item-vr a::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.categories-list__item-popular-2 a::after {
+.categories-list__item-monopod a::after {
   background-image: url("../img/popular-2.svg");
   background-position: bottom;
 }
 
-.categories-list__item-popular-3 a::after {
+.categories-list__item-actioncamera a::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.categories-list__item-popular-4 a::after {
+.categories-list__item-fitnesstracker a::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.categories-list__item-popular-5 a::after {
+.categories-list__item-smartwatch a::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.categories-list__item-popular-6 a::after {
+.categories-list__item-quadcopter a::after {
   background-image: url("../img/popular-6.svg");
 }
 
