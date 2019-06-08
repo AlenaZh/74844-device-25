@@ -1124,20 +1124,23 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.social-button {
+.social-button:not(:last-child) {
+  margin-right: 22px;
+}
+
+.social-button a {
   display: block;
   width: 32px;
   height: 32px;
 
-  background: url("../img/icon-facebook.svg") no-repeat;
   opacity: 0.6;
 }
 
-.social-button:hover {
+.social-button a:hover {
   opacity: 0.3;
 }
 
-.social-button:active {
+.social-button a:active {
   opacity: 0.1;
 }
 
@@ -1149,19 +1152,15 @@ input[type="radio"].visually-hidden {
   outline: 10px auto -webkit-focus-ring-color;
 }
 
-.social-button:not(:last-child) {
-  margin-right: 22px;
-}
-
-.social-button:nth-child(1) {
+.social-button-fb a {
   background: url("../img/icon-facebook.svg") no-repeat;
 }
 
-.social-button:nth-child(2) {
+.social-button-inst a {
   background: url("../img/icon-instagram.svg") no-repeat;
 }
 
-.social-button:nth-child(3) {
+.social-button-tw a {
   background: url("../img/icon-twitter.svg") no-repeat;
 }
 
