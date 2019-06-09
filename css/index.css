@@ -1816,6 +1816,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-pagination a {
   display: inline-block;
+  width: 100%;
 
   font-weight: 800;
   font-size: 16px;
