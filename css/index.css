@@ -712,6 +712,7 @@ input[type="radio"].visually-hidden {
 .services {
   position: relative;
 
+  min-width: 1200px;
   padding-top: 54px;
   padding-bottom: 160px;
 }
@@ -1031,6 +1032,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
+  min-width: 1200px;
+
   color: rgb(255, 255, 255);
 
   background-color: rgb(70, 70, 70);
@@ -1384,6 +1387,7 @@ input[type="radio"].visually-hidden {
 .catalog-colum-wrapper {
   display: flex;
   flex-direction: row;
+  min-width: 1200px;
 }
 
 .catalog-colum-wrapper-left {
