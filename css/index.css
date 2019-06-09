@@ -79,7 +79,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
