@@ -1769,7 +1769,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   order: -1;
-  min-height: 380px;
+  height: 380px;
   margin: 0;
 }
 
