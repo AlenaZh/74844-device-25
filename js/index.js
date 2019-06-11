@@ -11,8 +11,11 @@ var mapButton = document.querySelector(".contacts-map");
 var mapModal = document.querySelector(".map");
 var mapModalClose = mapModal.querySelector(".modal-button");
 
-var carouselSliders = document.querySelectorAll(".carousel-list-item");
-var carouselButtons = document.querySelectorAll(".carousel-button");
+var carouselSlidersProducts = document.querySelectorAll(".carousel-list-item");
+var carouselButtonsProducts = document.querySelectorAll(".carousel-button");
+
+var carouselSlidersServices = document.querySelectorAll(".services-list__item");
+var carouselButtonsServices = document.querySelectorAll(".services-button");
 
 var isStorageSupport = true;
 var storage = {};
@@ -81,32 +84,63 @@ mapModalClose.addEventListener("click", function(e){
     mapModal.classList.remove("modal-show");
 });
 
-/*slider*/ 
+/*carousel-products*/ 
 
-currentSlideNumber = "1";
+currentSlideNumberProducts = "1";
 
-carouselButtons.forEach(function(button, index){
+carouselButtonsProducts.forEach(function(button, index){
     button.addEventListener("click", function(){
-        for(var i = 0; i < carouselSliders.length; i++){
-            if(carouselSliders[i].dataset.number === currentSlideNumber){
-                carouselSliders[i].classList.remove("carousel-list-item--current");
+        for(var i = 0; i < carouselSlidersProducts.length; i++){
+            if(carouselSlidersProducts[i].dataset.number === currentSlideNumberProducts){
+                carouselSlidersProducts[i].classList.remove("carousel-list-item--current");
             }
     
-            if(carouselSliders[i].dataset.number === button.dataset.number){
-                carouselSliders[i].classList.add("carousel-list-item--current");
-            }
-        }
-    
-        for(var i = 0; i < carouselButtons.length; i++){
-            if(carouselButtons[i].dataset.number === currentSlideNumber){
-                carouselButtons[i].classList.remove("carousel-button--current");
-            }
-    
-            if(carouselButtons[i].dataset.number === button.dataset.number){
-                carouselButtons[i].classList.add("carousel-button--current");
+            if(carouselSlidersProducts[i].dataset.number === button.dataset.number){
+                carouselSlidersProducts[i].classList.add("carousel-list-item--current");
             }
         }
     
-        currentSlideNumber = button.dataset.number;
+        for(var i = 0; i < carouselButtonsProducts.length; i++){
+            if(carouselButtonsProducts[i].dataset.number === currentSlideNumberProducts){
+                carouselButtonsProducts[i].classList.remove("carousel-button--current");
+            }
+    
+            if(carouselButtonsProducts[i].dataset.number === button.dataset.number){
+                carouselButtonsProducts[i].classList.add("carousel-button--current");
+            }
+        }
+    
+        currentSlideNumberProducts = button.dataset.number;
+    });
+});
+
+
+/*services*/
+
+currentSlideNumberServices = "1";
+
+carouselButtonsServices.forEach(function(button, index){
+    button.addEventListener("click", function(){
+        for(var i = 0; i < carouselSlidersServices.length; i++){
+            if(carouselSlidersServices[i].dataset.number === currentSlideNumberServices){
+                carouselSlidersServices[i].classList.remove("services-list__item--current");
+            }
+    
+            if(carouselSlidersServices[i].dataset.number === button.dataset.number){
+                carouselSlidersServices[i].classList.add("services-list__item--current");
+            }
+        }
+    
+        for(var i = 0; i < carouselButtonsServices.length; i++){
+            if(carouselButtonsServices[i].dataset.number === currentSlideNumberServices){
+                carouselButtonsServices[i].classList.remove("services-button--current");
+            }
+    
+            if(carouselButtonsServices[i].dataset.number === button.dataset.number){
+                carouselButtonsServices[i].classList.add("services-button--current");
+            }
+        }
+    
+        currentSlideNumberServices = button.dataset.number;
     });
 });
