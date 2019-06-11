@@ -1468,6 +1468,79 @@ input[type="radio"].visually-hidden {
   background-color: rgb(0, 0, 0);
 }
 
+.filter .range-filter {
+  position: relative;
+
+  margin: 30px 0 40px 0;
+}
+
+.filter .scale {
+  height: 2px;
+
+  background: rgb(219, 219, 219);
+}
+
+.range-controls .bar {
+  width: 110px;
+  height: 2px;
+
+  background: rgb(145, 201, 47);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgb(207, 207, 207);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  margin-top: 10px;
+
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+  width: 60px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  text-align: left;
+  color: rgba(0, 0, 0, 0.2);
+
+  background-color: transparent;
+  border: none;
+}
+
 .filter ul {
   padding-left: 0;
 
