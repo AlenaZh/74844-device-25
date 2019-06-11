@@ -114,7 +114,6 @@ carouselButtonsProducts.forEach(function(button, index){
     });
 });
 
-
 /*services*/
 
 currentSlideNumberServices = "1";

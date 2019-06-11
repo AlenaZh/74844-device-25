@@ -1531,7 +1531,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle {
   position: absolute;
-  top: -9px;
+  top: -10px;
 
   width: 4px;
   height: 4px;
@@ -1542,6 +1542,10 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgb(207, 207, 207);
   cursor: pointer;
+}
+
+.range-controls .toggle:active {
+  border-width: 9px;
 }
 
 .range-controls .toggle-min {
