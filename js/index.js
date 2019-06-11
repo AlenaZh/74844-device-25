@@ -11,6 +11,9 @@ var mapButton = document.querySelector(".contacts-map");
 var mapModal = document.querySelector(".map");
 var mapModalClose = mapModal.querySelector(".modal-button");
 
+var carouselSliders = document.querySelectorAll(".carousel-list-item");
+var carouselButtons = document.querySelectorAll(".carousel-button");
+
 var isStorageSupport = true;
 var storage = {};
 
@@ -78,3 +81,32 @@ mapModalClose.addEventListener("click", function(e){
     mapModal.classList.remove("modal-show");
 });
 
+/*slider*/ 
+
+currentSlideNumber = "1";
+
+carouselButtons.forEach(function(button, index){
+    button.addEventListener("click", function(){
+        for(var i = 0; i < carouselSliders.length; i++){
+            if(carouselSliders[i].dataset.number === currentSlideNumber){
+                carouselSliders[i].classList.remove("carousel-list-item--current");
+            }
+    
+            if(carouselSliders[i].dataset.number === button.dataset.number){
+                carouselSliders[i].classList.add("carousel-list-item--current");
+            }
+        }
+    
+        for(var i = 0; i < carouselButtons.length; i++){
+            if(carouselButtons[i].dataset.number === currentSlideNumber){
+                carouselButtons[i].classList.remove("carousel-button--current");
+            }
+    
+            if(carouselButtons[i].dataset.number === button.dataset.number){
+                carouselButtons[i].classList.add("carousel-button--current");
+            }
+        }
+    
+        currentSlideNumber = button.dataset.number;
+    });
+});

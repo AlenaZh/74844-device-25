@@ -436,9 +436,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.carousel-list-item:nth-child(1)::before,
-.carousel-list-item:nth-child(3)::before,
-.carousel-list-item:nth-child(4)::before {
+.carousel-list-item::before{
   content: "";
   position: absolute;
   top: 36px;
@@ -450,9 +448,7 @@ input[type="radio"].visually-hidden {
   background-color: rgb(255, 255, 255);
 }
 
-.carousel-list-item:nth-child(1)::after,
-.carousel-list-item:nth-child(2)::after,
-.carousel-list-item:nth-child(3)::after {
+.carousel-list-item::after {
   content: "";
   position: absolute;
   top: 63px;
