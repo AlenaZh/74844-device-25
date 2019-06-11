@@ -1196,8 +1196,6 @@ input[type="radio"].visually-hidden {
   left: 50%;
   z-index: 5;
 
-/*display: block;*/
-
   display: none;
   width: 760px;
   padding: 95px 100px 70px 100px;
@@ -1294,15 +1292,30 @@ input[type="radio"].visually-hidden {
   transform: translate(-50%, -50%);
 }
 
+.map iframe {
+  position: absolute;
+  z-index: 2;
+
+  border: none;
+}
+
+.map img {
+  position: absolute;
+  z-index: 1;
+}
+
 .modal-button {
   content: "";
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 3;
 
   width: 55px;
   height: 55px;
   padding: 0;
+
+  font-size: 0;
 
   background: url("../img/modal-close.svg") no-repeat;
   border: none;
@@ -1315,6 +1328,16 @@ input[type="radio"].visually-hidden {
 
 .modal-button:active {
   opacity: 0.3;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.contacts-modal-error {
+  animation: shake 0.6s;
 }
 
 /*catalog.html*/
@@ -1943,3 +1966,46 @@ input[type="radio"].visually-hidden {
 .catalog-pagination-next:active a {
   color: rgba(0, 0, 0, 0.3);
 }
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-49%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+
+  70% {
+    transform: translate(-50%, -52%);
+  }
+
+  90% {
+    transform: translate(-50%, -49%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
