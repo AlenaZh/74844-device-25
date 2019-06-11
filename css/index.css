@@ -364,7 +364,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .compare {
-  margin-right: 14px;
+  margin-right: 29px;
   padding-left: 21px;
 }
 
@@ -1098,8 +1098,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation-footer {
-  width: 200px;
-  margin-left: 65px;
+  margin-left: 44px;
 }
 
 .user-navigation-footer {
@@ -1471,7 +1470,7 @@ input[type="radio"].visually-hidden {
 .filter .range-filter {
   position: relative;
 
-  margin: 30px 0 40px 0;
+  margin-top: 32px;
 }
 
 .filter .scale {
@@ -1542,6 +1541,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter ul {
+  margin-top: 14px;
+  margin-bottom: 9px;
+  margin-bottom: 9px;
   padding-left: 0;
 
   list-style: none;
@@ -1607,6 +1609,10 @@ input[type="radio"].visually-hidden {
 
 .filter-item input[type="radio"]:checked + .filter-item-text::before {
   background: url("../img/radio-on.svg") no-repeat;
+}
+
+.filter fieldset:last-of-type {
+  margin-bottom: 25px;
 }
 
 .sort-wrapper {
@@ -1778,7 +1784,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 360px;
-  margin-bottom: 46px;
+  margin-bottom: 49px;
 }
 
 .catalog-item:hover .catalog-item-inner {
@@ -1787,7 +1793,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-caption-wrap {
   display: flex;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .catalog-item-price {
