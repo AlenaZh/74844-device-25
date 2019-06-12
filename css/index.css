@@ -207,13 +207,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.search-form input:focus {
+.search-form:focus-within input {
   border-bottom: 2px solid rgb(0, 0, 0);
   outline: none;
   opacity: 1;
 }
 
-.search-form input:focus ~ .search-form-button {
+.search-form:focus-within input ~ .search-form-button {
   display: block;
 }
 
@@ -266,6 +266,10 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.site-navigation__item a:focus-within ~ .site-navigation-catalog{
+  display: flex;
 }
 
 .site-navigation__item:first-child {
@@ -1138,6 +1142,11 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-footer .logout {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.site-navigation-footer {
+  max-width: 640px;
+  margin-right: 40px;
 }
 
 .site-navigation-footer li:nth-child(n) {
