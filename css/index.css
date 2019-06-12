@@ -1425,8 +1425,8 @@ input[type="radio"].visually-hidden {
   top: 9px;
   left: -22px;
 
-  width: 4px;
-  height: 7px;
+  width: 10px;
+  height: 13px;
 
   background: url("../img/breadcrumbs-arrow.svg") no-repeat;
 }
@@ -1713,8 +1713,8 @@ input[type="radio"].visually-hidden {
   top: 9px;
   left: 0;
 
-  width: 28px;
-  height: 23px;
+  width: 34px;
+  height: 34px;
 
   background: url("../img/checkbox-off.svg") no-repeat;
 }
@@ -1729,8 +1729,8 @@ input[type="radio"].visually-hidden {
   top: 9px;
   left: 0;
 
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 
   background: url("../img/radio-off.svg") no-repeat;
 }
@@ -1846,8 +1846,8 @@ input[type="radio"].visually-hidden {
   top: 7px;
   left: -11px;
 
-  width: 10px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
 
   opacity: 0.2;
 }
