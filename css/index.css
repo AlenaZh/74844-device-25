@@ -431,7 +431,7 @@ input[type="radio"].visually-hidden {
 
   margin-bottom: 98px;
 
-  background: linear-gradient(to bottom , rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
+  background: linear-gradient(to bottom, rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
 }
 
 .carousel-list {
@@ -1450,8 +1450,8 @@ input[type="radio"].visually-hidden {
 .breadcrumbs li:not(:first-child)::before {
   content: "";
   position: absolute;
-  top: 9px;
-  left: -22px;
+  top: 6px;
+  left: -25px;
 
   width: 10px;
   height: 13px;
@@ -1508,7 +1508,7 @@ input[type="radio"].visually-hidden {
   line-height: 70px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 3.7px;
 
   background-color: rgb(220, 220, 220);
 }
@@ -1588,7 +1588,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-  padding-top: 70px;
+  padding-top: 68px;
 }
 
 .filter fieldset {
@@ -1610,7 +1610,7 @@ input[type="radio"].visually-hidden {
 .filter legend::before {
   content: "";
   position: absolute;
-  top: -14px;
+  top: -13px;
 
   width: 100%;
   height: 2px;
@@ -1697,9 +1697,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter ul {
-  margin-top: 14px;
-  margin-bottom: 9px;
-  margin-bottom: 9px;
+  margin-top: 17px;
+  margin-bottom: 4px;
   padding-left: 0;
 
   list-style: none;
@@ -1738,8 +1737,8 @@ input[type="radio"].visually-hidden {
 .filter-item input[type="checkbox"] + .filter-item-text::before {
   content: "";
   position: absolute;
-  top: 9px;
-  left: 0;
+  top: 7px;
+  left: -3px;
 
   width: 34px;
   height: 34px;
@@ -1754,8 +1753,8 @@ input[type="radio"].visually-hidden {
 .filter-item input[type="radio"] + .filter-item-text::before {
   content: "";
   position: absolute;
-  top: 9px;
-  left: 0;
+  top: 6px;
+  left: -3px;
 
   width: 30px;
   height: 30px;
@@ -1768,7 +1767,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset:last-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .sort-wrapper {
@@ -1795,7 +1794,7 @@ input[type="radio"].visually-hidden {
   line-height: 70px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 3.7px;
 }
 
 .sort-params,
@@ -1806,17 +1805,17 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-params {
-  margin-left: 54px;
+  margin-left: 50px;
 }
 
 .sort-params li {
   display: inline-block;
 
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .sort-params li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .sort-params a {
@@ -1871,8 +1870,8 @@ input[type="radio"].visually-hidden {
 .sort-direction-arrow::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -11px;
+  top: 3px;
+  left: -13px;
 
   width: 15px;
   height: 15px;
@@ -1893,7 +1892,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  padding-bottom: 78px;
+  padding-bottom: 76px;
 }
 
 .catalog-wrapper {
@@ -1934,7 +1933,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 360px;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
 }
 
 .catalog-item:hover .catalog-item-inner {
@@ -2030,7 +2029,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-top: -14px;
+  margin-top: -11px;
   padding: 0;
 
   list-style: none;
@@ -2134,6 +2133,3 @@ input[type="radio"].visually-hidden {
     transform: translate(-50%, -50%);
   }
 }
-
-
-
