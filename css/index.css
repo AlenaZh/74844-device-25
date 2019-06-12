@@ -825,7 +825,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: none;
-  width: 460px;
+  width: 440px;
 }
 
 .services-list__item--current {
@@ -836,7 +836,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 11px;
-  right: -235px;
+  right: -255px;
 }
 
 .services-list__item:nth-child(1)::after {
