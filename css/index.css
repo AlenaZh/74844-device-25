@@ -90,6 +90,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   display: inline-block;
+  vertical-align: middle;
   padding: 0 40px;
 
   font-weight: 800;
@@ -563,6 +564,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
 
@@ -571,6 +573,7 @@ input[type="radio"].visually-hidden {
 
 .carousel-controls li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .carousel-controls li:not(:last-child) {
@@ -1231,6 +1234,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-item {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .contacts-item:nth-child(1) {
@@ -1567,6 +1571,7 @@ input[type="radio"].visually-hidden {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
 
   font-weight: 300;
   font-size: 14px;
@@ -1949,6 +1954,7 @@ input[type="radio"].visually-hidden {
 .catalog-pagination a {
   display: inline-block;
   width: 100%;
+  vertical-align: middle;
 
   font-weight: 800;
   font-size: 16px;
