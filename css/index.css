@@ -1434,6 +1434,80 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.catalog-wrapper-top {
+  position: relative;
+
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 1200px;
+  min-height: 70px;
+}
+
+.catalog-wrapper-top-inner {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+.catalog-wrapper-top-left {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.catalog-wrapper-top-left p {
+  position: relative;
+
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+  padding-right: 68px;
+  padding-left: 60px;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 70px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: rgb(220, 220, 220);
+}
+
+.catalog-wrapper-top-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(220, 220, 220);
+}
+
+.catalog-wrapper-top-rgiht {
+  position: relative;
+
+  display: flex;
+  flex-grow: 1;
+}
+
+.catalog-wrapper-top-rgiht::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(239, 239, 239);
+}
+
 .catalog-colum-wrapper {
   display: flex;
   flex-direction: row;
@@ -1459,17 +1533,6 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding-right: 68px;
   padding-left: 60px;
-}
-
-.filters::before {
-  content: "";
-  position: absolute;
-  left: 0;
-
-  width: 100%;
-  height: 70px;
-
-  background-color: rgb(220, 220, 220);
 }
 
 .filters h2 {
@@ -1677,35 +1740,11 @@ input[type="radio"].visually-hidden {
 
   background-color: rgb(239, 239, 239);
 }
-/*
-.sort-wrapper::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  z-index: -1;
-
-  width: 100%;
-  height: 70px;
-
-  background-color: rgb(239, 239, 239);
-}*/
 
 .sort {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  background-color: rgb(239, 239, 239);
-}
-
-.sort::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  z-index: -1;
-
-  width: 100%;
-  height: 70px;
 
   background-color: rgb(239, 239, 239);
 }
@@ -1735,6 +1774,7 @@ input[type="radio"].visually-hidden {
 
 .sort-params li {
   display: inline-block;
+
   vertical-align: middle;
 }
 
@@ -1763,6 +1803,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-direction {
+  min-width: 60px;
   margin-left: auto;
 }
 
