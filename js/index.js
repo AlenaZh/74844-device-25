@@ -88,6 +88,10 @@ mapModalClose.addEventListener("click", function(e){
 
 currentSlideNumberProducts = "1";
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 carouselButtonsProducts.forEach(function(button, index){
     button.addEventListener("click", function(){
         for(var i = 0; i < carouselSlidersProducts.length; i++){
