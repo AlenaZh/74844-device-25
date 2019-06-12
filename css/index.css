@@ -497,6 +497,7 @@ input[type="radio"].visually-hidden {
 }
 
 .carousel-list-text-wrapper p {
+  width: 480px;
   margin-top: 20px;
   margin-bottom: 44px;
 }
