@@ -162,7 +162,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .search-wrapper {
@@ -383,7 +383,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .compare {
-  margin-right: 29px;
+  margin-right: 39px;
   padding-left: 21px;
 }
 
@@ -394,7 +394,6 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .basket {
-  margin-left: 10px;
   padding-left: 22px;
 }
 
@@ -430,7 +429,7 @@ input[type="radio"].visually-hidden {
 .carousel-products {
   position: relative;
 
-  margin-bottom: 100px;
+  margin-bottom: 98px;
 
   background: linear-gradient(to bottom , rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
 }
@@ -459,7 +458,7 @@ input[type="radio"].visually-hidden {
 .carousel-list-item::before {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 37px;
   right: 460px;
 
   width: 100px;
@@ -471,7 +470,7 @@ input[type="radio"].visually-hidden {
 .carousel-list-item::after {
   content: "";
   position: absolute;
-  top: 63px;
+  top: 60px;
   right: 46px;
 
   font-weight: 800;
@@ -519,12 +518,14 @@ input[type="radio"].visually-hidden {
   width: 480px;
   margin-top: 20px;
   margin-bottom: 44px;
+
+  letter-spacing: 0.13px;
 }
 
 .carousel-list-text-wrapper .button {
   order: 1;
   align-self: flex-start;
-  margin-bottom: 47px;
+  margin-bottom: 51px;
 }
 
 .carousel-list-text-wrapper table {
@@ -536,6 +537,7 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .carousel-list p {
@@ -577,8 +579,8 @@ input[type="radio"].visually-hidden {
 
 .carousel-controls {
   position: absolute;
-  right: 80px;
-  bottom: 155px;
+  right: 82px;
+  bottom: 152px;
   z-index: 1;
 
   display: inline-block;
@@ -596,7 +598,7 @@ input[type="radio"].visually-hidden {
 }
 
 .carousel-controls li:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .carousel-button {
@@ -627,7 +629,7 @@ input[type="radio"].visually-hidden {
 }
 
 .categories {
-  margin-bottom: 82px;
+  margin-bottom: 81px;
 }
 
 .categories-list {
@@ -779,7 +781,7 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 
   width: 7px;
-  height: 160%;
+  height: 159%;
   min-height: 320px;
 
   background-color: rgb(0, 0, 0);
@@ -895,11 +897,12 @@ input[type="radio"].visually-hidden {
 
 .services-list p {
   color: rgb(70, 70, 70);
+  letter-spacing: 0.3px;
 }
 
 .brands {
   margin-top: 47px;
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 .brands-list__item a {
@@ -1001,11 +1004,12 @@ input[type="radio"].visually-hidden {
 }
 
 .about p {
-  width: 460px;
+  width: 480px;
   margin-top: 0;
   margin-bottom: 31px;
 
   color: rgb(70, 70, 70);
+  letter-spacing: 0.1px;
 }
 
 .about-list {
@@ -1037,6 +1041,10 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.about-button {
+  padding: 0 20px;
+}
+
 .contacts {
   box-sizing: border-box;
   width: 50%;
@@ -1061,6 +1069,7 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .contacts p {
@@ -1068,6 +1077,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 
   color: rgb(70, 70, 70);
+  letter-spacing: 0.1px;
 }
 
 .contacts-map {
@@ -1101,7 +1111,7 @@ input[type="radio"].visually-hidden {
   flex-flow: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 65px;
+  margin-bottom: 62px;
 }
 
 .main-footer-middle-wrapper p {
@@ -1142,10 +1152,14 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation-footer {
+  display: flex;
+  flex-direction: row;
   margin-left: 44px;
 }
 
 .user-navigation-footer {
+  display: flex;
+  flex-direction: row;
   margin-left: auto;
 }
 
