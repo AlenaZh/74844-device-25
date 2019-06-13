@@ -49,7 +49,6 @@ writeUsModalClose.addEventListener("click", function(e){
 writeUsForm.addEventListener("submit", function(e){
     if(!writeUsName.value || !writeUsEmail.value || !writeUsText.value){
         e.preventDefault();
-        console.log("!!!");
         writeUsModal.classList.remove("contacts-modal-error");
         writeUsModal.offsetWidth = writeUsModal.offsetWidth;
         writeUsModal.classList.add("contacts-modal-error");
