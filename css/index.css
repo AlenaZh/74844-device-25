@@ -1013,7 +1013,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .about-list li {
