@@ -31,7 +31,7 @@ writeUsButton.addEventListener("click", function(e){
     e.preventDefault(); 
     writeUsModal.classList.add("modal-show");
     
-    if(Object.keys(storage).length !== 0){      
+    if(Object.keys(storage).name !== null){      
         writeUsName.value = storage.name,
         writeUsEmail.value = storage.email,
         writeUsText.focus()
