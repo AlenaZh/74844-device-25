@@ -539,6 +539,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.carousel-list-item:nth-child(3) .carousel-list-image-wrapper {
+  padding-top: 56px;
+}
+
 .carousel-list-image-wrapper img {
   margin-left: -52px;
 }
@@ -588,7 +592,7 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.46px;
 }
 
 .carousel-list p {
