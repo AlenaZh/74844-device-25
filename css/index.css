@@ -623,12 +623,14 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
+  text-align: left;
 }
 
 .carousel-parameters th {
   font-weight: 300;
   font-size: 13px;
   line-height: 36px;
+  text-align: left;
   color: rgb(70, 70, 70);
 }
 
