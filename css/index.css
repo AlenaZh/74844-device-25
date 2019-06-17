@@ -1050,7 +1050,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 27px;
-  padding-bottom: 82px;
+  padding-bottom: 84px;
 }
 
 .about {
@@ -2070,7 +2070,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
-  padding-bottom: 78px;
+  padding-bottom: 77px;
 }
 
 .catalog-wrapper {
