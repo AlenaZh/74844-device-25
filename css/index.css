@@ -145,7 +145,7 @@ input[type="radio"].visually-hidden {
 
 .navigation-main {
   padding-top: 22px;
-  padding-bottom: 50px;
+  padding-bottom: 53px;
 }
 
 .header-main-logo {
@@ -171,7 +171,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .search-wrapper {
@@ -414,7 +414,7 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-navigation .compare {
-  margin-right: 39px;
+  margin-right: 42px;
   padding-left: 21px;
 }
 
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
 .carousel-products {
   position: relative;
 
-  margin-bottom: 98px;
+  margin-bottom: 96px;
 
   background: -webkit-linear-gradient(top, rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
   background:      -o-linear-gradient(top, rgb(247, 226, 150) 110px, rgb(255, 255, 255) 110px);
@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
 .carousel-list-item::before {
   content: "";
   position: absolute;
-  top: 37px;
+  top: 36px;
   right: 460px;
 
   width: 100px;
@@ -510,8 +510,8 @@ input[type="radio"].visually-hidden {
 .carousel-list-item::after {
   content: "";
   position: absolute;
-  top: 60px;
-  right: 46px;
+  top: 58px;
+  right: 47px;
 
   font-weight: 800;
   font-size: 172px;
@@ -566,8 +566,8 @@ input[type="radio"].visually-hidden {
 
 .carousel-list-text-wrapper p {
   width: 480px;
-  margin-top: 20px;
-  margin-bottom: 44px;
+  margin-top: 18px;
+  margin-bottom: 43px;
 
   letter-spacing: 0.13px;
 }
@@ -1047,8 +1047,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 80px;
+  padding-top: 27px;
+  padding-bottom: 82px;
 }
 
 .about {
@@ -1071,7 +1071,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about h2 {
-  margin-top: 51px;
+  margin-top: 52px;
   margin-bottom: 44px;
 
   font-weight: 800;
@@ -1083,15 +1083,15 @@ input[type="radio"].visually-hidden {
 .about p {
   width: 480px;
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 
   color: rgb(70, 70, 70);
   letter-spacing: 0.1px;
 }
 
 .about-list {
-  margin-top: 67px;
-  margin-bottom: 56px;
+  margin-top: 66px;
+  margin-bottom: 54px;
   padding-left: 36px;
 
   list-style: none;
@@ -1147,7 +1147,6 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.6px;
 }
 
 .contacts p {
@@ -1160,7 +1159,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-map {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .main-footer {
@@ -1179,7 +1178,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-top: 65px;
+  padding-top: 62px;
   padding-bottom: 65px;
 }
 
@@ -1191,7 +1190,7 @@ input[type="radio"].visually-hidden {
       flex-flow: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  margin-bottom: 22px;
+  margin-bottom: 39px;
 }
 
 .main-footer-middle-wrapper {
@@ -1244,6 +1243,17 @@ input[type="radio"].visually-hidden {
   background-color: rgb(240, 197, 46);
 }
 
+.main-footer-logo {
+  position: relative;
+
+  width: 100%;
+}
+
+.main-footer-logo img {
+  position: absolute;
+  top: 4px;
+}
+
 .main-footer-logo:hover {
   opacity: 0.6;
 }
@@ -1264,13 +1274,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-left: 44px;
+  margin-left: 43px;
 }
 
 .user-navigation-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-shrink: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1293,7 +1304,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-footer li:nth-child(n) {
-  margin-right: 38px;
+  margin-right: 33px;
 }
 
 .site-navigation-footer li:last-child {
@@ -1534,7 +1545,8 @@ input[type="radio"].visually-hidden {
 /*catalog.html*/
 
 .catalog-page .navigation-main {
-  padding-bottom: 50px;
+  padding-top: 21px;
+  padding-bottom: 51px;
 }
 
 .profile {
@@ -1543,8 +1555,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-  margin-top: 38px;
-  margin-bottom: 23px;
+  margin-top: 37px;
+  margin-bottom: 25px;
   padding: 0 60px;
 
   font-weight: 800;
@@ -1768,6 +1780,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
+  vertical-align: middle;
 
   border-top: 2px solid rgb(0, 0, 0);
 }
