@@ -31,11 +31,12 @@ writeUsButton.addEventListener("click", function(e){
     e.preventDefault(); 
     writeUsModal.classList.add("modal-show");
     
-    if(Object.keys(storage).name !== null){      
+    if(Object.keys(storage).name !== undefined){      
         writeUsName.value = storage.name,
         writeUsEmail.value = storage.email,
         writeUsText.focus()
     } else{
+        writeUsName.value ="";
         writeUsName.focus();
     }
 });
